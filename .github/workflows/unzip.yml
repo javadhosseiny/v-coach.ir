@@ -18,13 +18,13 @@ jobs:
         run: |
           rm -rf extracted
           mkdir extracted
-          unzip -o "www-v-coche.zip" -d extracted
+          unzip -o "www-v-coche.zip" -d extracted || true
 
-      - name: Copy extracted files to repository root
+      - name: Copy extracted files
         run: |
           cp -a extracted/. .
 
-      - name: Remove ZIP and temporary folder
+      - name: Remove ZIP
         run: |
           rm -f "www-v-coche.zip"
           rm -rf extracted
