@@ -1,0 +1,44 @@
+name: Extract www-v-coche ZIP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract ZIP
+        run: |
+          rm -rf extracted
+          mkdir extracted
+          unzip -o "www-v-coche.zip" -d extracted
+
+      - name: Copy extracted files to repository root
+        run: |
+          cp -a extracted/. .
+
+      - name: Remove ZIP and temporary folder
+        run: |
+          rm -f "www-v-coche.zip"
+          rm -rf extracted
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Extract www-v-coche.zip"
+            git push
+          fi
