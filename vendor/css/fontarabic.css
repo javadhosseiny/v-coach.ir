@@ -1,0 +1,13 @@
+@font-face {
+/*    font-family: IRANSans; */
+    font-family: arabic;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/vendor/fonts/arabic/Arabic.eot');
+    src: url('/vendor/fonts/arabic/Arabic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/vendor/fonts/arabic/Arabic.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+    url('/vendor/fonts/arabic/Arabic.woff') format('woff'),  /* FF36+, IE9, Chrome6+, Saf51+*/
+    url('/vendor/fonts/arabic/Arabic.ttf') format('truetype');
+}
+/* * {    font-family: IRANSans !important;} */
+body {    font-family: arabic !important;}

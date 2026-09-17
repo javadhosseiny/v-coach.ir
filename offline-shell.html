@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS اختصاصی برای نمایش آفلاین (بسیار سبک) */
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .offline-container {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 90%;
+            border-top: 5px solid GREEN; /* رنگ برند شما */
+        }
+        .offline-container h1 {
+            color: GREEN; /* رنگ اصلی برند */
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .offline-container p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .offline-container a {
+            display: inline-block;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .offline-container a:hover {
+            background-color: #5a6268;
+        }
+        .icon {
+            font-size: 4rem;
+            color: #ffc107; /* رنگ هشدار/آفلاین */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="offline-container">
+        <div class="icon">🚫</div> 
+        
+        <h1>شما آفلاین هستید!</h1>
+        <p>به نظر می‌رسد ارتباط شما با اینترنت قطع شده است.</p>
+        
+        <p style="font-size: 0.9rem; color: #6c757d;">
+            این صفحه پوسته اصلی سایت است که در دستگاه شما کش شده است.
+            لطفاً ارتباط خود را بررسی کرده و سپس دکمه زیر را برای به‌روزرسانی محتوا کلیک کنید.
+        </p>
+
+        <a href="/">تلاش مجدد</a>
+    </div>
+
+</body>
+</html>

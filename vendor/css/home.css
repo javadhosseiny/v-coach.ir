@@ -1,0 +1,209 @@
+@import "fontiran.css";
+
+html, body	{ height: 100%; }
+
+
+
+/* LINK COLORS */
+
+a:link, a:visited, a:active	{ color: #FFF; text-decoration: none; }
+
+a:hover				{ text-decoration: none; }
+
+
+
+
+
+
+/* THIS LINE CONTROLS THE GENERAL FONT SIZE */
+
+
+
+.title		{ color: #FFFFFF; font: normal 1.3em  "Trebuchet MS", arial, sans-serif; text-decoration: none; }
+
+.hilite		{ color: #FFCC66; }
+
+
+
+
+
+
+/* PAGE ALIGNMENT WIDTHS HEIGHTS */
+
+.pagewrapper	{
+		width: 100%;
+		height: 100%;
+		margin: 0px auto 0px auto;
+		border: #999999 0px solid;
+		}
+
+.pagewrapper td { text-align: center; vertical-align: middle; }
+
+.content-inner {  max-width: 100%; margin: 0px auto; }
+
+.content-outer 	{
+		max-width: 590px;
+		min-width: 210px;
+		min-height: 390px;
+		text-align: center;
+/*		background-color: transparent;
+/*		background-image:url("/images/shade-blue3-70.png"); */
+		border: #fff 2px solid;
+		background-position: 0px 0px;
+		background-repeat: repeat;
+		padding: 25px;
+		margin: 18px auto 0px auto;
+		background: #112162;		
+		}
+
+.textdiv	{
+		float: left;
+		text-align: left;
+		padding: 0px;
+		margin: 8px 0px 0px 0px;
+		}
+
+.imagediv	{
+		width: 130px;
+		float: left;
+		text-align: center;
+		padding: 0px;
+		margin: 8px 16px 0px 0px;
+		}
+
+.floatclear	{ clear: both; font-size: 1px; padding: 0px; margin: 0px; height: 1px; }
+
+
+
+
+
+
+/* ADJUST VERTICAL ALIGNMENT */
+
+.adjustvert	{ height: 50px; }
+
+
+
+
+/* MUSIC PLAYER */
+
+.musicplayer		{ width: 98%; }
+
+.musicplayerwidth	{
+			max-width: 500px;
+			min-width: 210px;
+			}
+
+
+
+
+
+
+/* ALIGNMENT */
+
+table, tr, td	{ border-collapse:collapse; border-spacing: 0; margin: 0; padding: 0; border: 0; }
+
+.td-right 	{ text-align: right; }
+
+.td-left 	{ text-align: left; }
+
+.td-center	{ text-align: center; }
+
+.td-middle	{ vertical-align: middle; }
+
+.td-top		{ vertical-align: top; }
+
+.center-div	{ margin-left: auto; margin-right: auto; }
+
+.left-div	{ margin-left: 0px; margin-right: auto; }
+
+.right-div	{ margin-left: auto; margin-right: 0px; }
+
+
+
+
+
+
+/* BORDERS AND BARS */
+
+.page-splits	{
+		min-width: 99%;
+		font-size: 0.1em;
+		line-height: 1px;
+		border-bottom: #fff 1px solid;
+		height: 3px;
+		margin: 12px 0px 12px 0px;
+		}
+
+
+/* IMAGES */
+
+.img-borders	{
+		display: block;
+		margin: 0px auto 8px auto;
+/*		border: #fff 1px solid;
+		padding-top: 10px;
+		padding-bottom: 10px;		
+*/		
+		}
+
+
+
+
+
+
+/* INTRO FLAGS CODE */
+
+.flagtable	{ background-color: transparent; }
+
+#flagicondiv	{
+		padding: 3px 10px 0px 0px;
+		margin: 0px;
+		background-color: transparent;
+		border: #999999 0px solid;
+		}
+
+.flagiconarea	{
+		width: 95px;
+		text-align: right;
+		float: right;
+		padding: 5px 0px 0px 0px;
+margin:10px;
+}
+
+
+.flagiconarea:hover	{
+	color:red;
+	
+}
+
+.flagicon 	{ 
+display: block;  margin: 6px auto 2px auto; }
+
+
+
+
+
+
+
+
+/***************
+Media Queries - RESPONSIVE FOR SMALLER MOBILE SCREENS
+***************/
+
+@media handheld and (max-width: 480px),
+   screen and (max-device-width: 480px),
+   screen and (max-width: 480px) 
+	{
+
+.content-outer 	{
+		padding: 9px;
+		margin: 0px auto 0px auto;
+		}
+
+	}
+
+
+
+
+

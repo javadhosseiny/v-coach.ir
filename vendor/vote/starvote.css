@@ -1,0 +1,98 @@
+.x_starcontainer {
+	width: 23px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 0 0 0;
+	background-repeat: no-repeat;
+	padding: 0;
+	display: inline-block;
+	_display: inline;
+}
+.x_notvoted {
+	cursor: hand;
+	/* FF */cursor: pointer;
+}
+.x_starcontainer:hover span{
+	color: #888;
+}
+.x_starcontainer span{
+	color: #ccc;
+	font-size: 12px;
+	margin: 12px 0 0 0;
+	vertical-align: middle;
+	display: inline-block;
+	_display: inline;
+}
+.x_full {
+	background-image: url('./star/10.png');
+}
+.x_empty {
+	background-image: url('./star/0.png');
+}
+.x_0percent {
+	background-image: url('./star/s0.png');
+}
+.x_10percent {
+	background-image: url('./star/s1.png');
+}
+.x_20percent {
+	background-image: url('./star/s2.png');
+}
+.x_30percent {
+	background-image: url('./star/s3.png');
+}
+.x_40percent {
+	background-image: url('./star/s4.png');
+}
+.x_50percent {
+	background-image: url('./star/s5.png');
+}
+.x_60percent {
+	background-image: url('./star/s6.png');
+}
+.x_70percent {
+	background-image: url('./star/s7.png');
+}
+.x_80percent {
+	background-image: url('./star/s8.png');
+}
+.x_90percent {
+	background-image: url('./star/s9.png');
+}
+.x_100percent {
+	background-image: url('./star/s10.png');
+}
+.x_disabled .x_0percent {
+	background-image: url('./star/d0.png');
+}
+.x_disabled .x_10percent {
+	background-image: url('./star/d1.png');
+}
+.x_disabled .x_20percent {
+	background-image: url('./star/d2.png');
+}
+.x_disabled .x_30percent {
+	background-image: url('./star/d3.png');
+}
+.x_disabled .x_40percent {
+	background-image: url('./star/d4.png');
+}
+.x_disabled .x_50percent {
+	background-image: url('./star/d5.png');
+}
+.x_disabled .x_60percent {
+	background-image: url('./star/d6.png');
+}
+.x_disabled .x_70percent {
+	background-image: url('./star/d7.png');
+}
+.x_disabled .x_80percent {
+	background-image: url('./star/d8.png');
+}
+.x_disabled .x_90percent {
+	background-image: url('./star/d9.png');
+}
+.x_disabled .x_100percent {
+	background-image: url('./star/d10.png');
+}
